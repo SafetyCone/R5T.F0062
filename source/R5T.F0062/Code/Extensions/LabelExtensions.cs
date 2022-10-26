@@ -19,7 +19,7 @@ namespace R5T.F0062.Extensions
         public static Label SetTrueOrFalse(this Label label,
             bool trueOrFalse)
         {
-            Instances.LabelOperator.SetTrueOrFalse(label, trueOrFalse);
+            Instances.LabelOperator.Set_TrueOrFalse(label, trueOrFalse);
 
             return label;
         }

@@ -19,7 +19,7 @@ namespace R5T.F0062
 			label.ForeColor = color;
 		}
 
-		public void SetTrueOrFalse(
+		public void Set_TrueOrFalse(
 			Label label,
 			bool trueOrFalse)
         {
@@ -29,6 +29,17 @@ namespace R5T.F0062
 
 			label.Text = text;
 			label.ForeColor = color;
+        }
+
+		/// <summary>
+		/// It can be hard to remember what property to use for the value of a <see cref="Label"/>.
+		/// The correct property is <see cref="Label.Text"/>.
+		/// </summary>
+		public void Set_Value(
+			Label label,
+			string value)
+        {
+			label.Text = value;
         }
 	}
 }
