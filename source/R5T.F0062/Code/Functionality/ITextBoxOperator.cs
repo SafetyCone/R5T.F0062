@@ -31,6 +31,15 @@ namespace R5T.F0062
 			return value;
         }
 
+		/// <summary>
+		/// It can be hard to remember which property of a <see cref="TextBox"/> contains its value.
+		/// The correct property is <see cref="TextBox.Text"/>.
+		/// </summary>
+		public void Set_Value(TextBox textBox, string value)
+        {
+			textBox.Text = value;
+        }
+
 		/// <inheritdoc cref="AddTextChangedHandler(TextBox, EventHandler)"/>
 		public void RemoveTextChangedHandler(
 			TextBox textBox,
