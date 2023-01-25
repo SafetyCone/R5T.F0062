@@ -16,4 +16,7 @@
     <ProjectReference Include="..\..\..\R5T.F0000\source\R5T.F0000\R5T.F0000.csproj" />
     <ProjectReference Include="..\..\..\R5T.NG0012\source\R5T.NG0012\R5T.NG0012.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Code\Classes\Instances\" />
+  </ItemGroup>
 </Project>
