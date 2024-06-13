@@ -8,6 +8,11 @@ namespace R5T.F0062
 	[ValuesMarker]
 	public partial interface IStrings : IValuesMarker
 	{
-		public string DefaultLabelText => Z0000.Strings.Instance.Ellipsis;
+#pragma warning disable IDE1006 // Naming Styles
+        public L0066.IStrings _Base => L0066.Strings.Instance;
+#pragma warning restore IDE1006 // Naming Styles
+
+
+        public string DefaultLabelText => _Base.Ellipsis;
 	}
 }

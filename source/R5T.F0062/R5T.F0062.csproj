@@ -13,10 +13,12 @@
     <RepositoryUrl>https://github.com/SafetyCone/R5T.F0062.git</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\R5T.F0000\source\R5T.F0000\R5T.F0000.csproj" />
-    <ProjectReference Include="..\..\..\R5T.NG0012\source\R5T.NG0012\R5T.NG0012.csproj" />
+    <Compile Remove="Code\Classes\**" />
+    <EmbeddedResource Remove="Code\Classes\**" />
+    <None Remove="Code\Classes\**" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Code\Classes\Instances\" />
+    <ProjectReference Include="..\..\..\R5T.L0066\source\R5T.L0066\R5T.L0066.csproj" />
+    <ProjectReference Include="..\..\..\R5T.NG0012\source\R5T.NG0012\R5T.NG0012.csproj" />
   </ItemGroup>
 </Project>
